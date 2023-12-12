@@ -16,7 +16,7 @@ for c in str2:
 
 # Iterate through the characters in 'd' in descending order of their counts.
 for c in sorted(d, key=d.get, reverse=True):
-    # Check if the character occurs more than once.
+    # Check if the character occurs more than zero times
     if d[c] > 0:
         # Print the character and its count.
         print('%s %d' % (c, d[c]))
