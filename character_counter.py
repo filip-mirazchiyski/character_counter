@@ -4,6 +4,7 @@ import collections
 # Define a string 'str1' with a sentence.
 str1 = input("Enter your text here: ")
 str2 = str1.lower()
+total_count = 0
 
 # Create a defaultdict 'd' with integer values as the default type.
 d = collections.defaultdict(int)
@@ -12,7 +13,8 @@ d = collections.defaultdict(int)
 # Update the counts of each character in the 'd' dictionary.
 for c in str2:
     if not c == " ":
-     d[c] += 1
+        d[c] += 1
+        total_count += 1
 
 # Iterate through the characters in 'd' in descending order of their counts.
 for c in sorted(d, key=d.get, reverse=True):
@@ -20,3 +22,5 @@ for c in sorted(d, key=d.get, reverse=True):
     if d[c] > 0:
         # Print the character and its count.
         print('%s %d' % (c, d[c]))
+
+print(f"Total characters: {total_count}")
