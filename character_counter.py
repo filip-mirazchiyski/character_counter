@@ -2,7 +2,7 @@
 import collections
 
 # Define a string 'str1' with a sentence.
-str1 = input("Сложи текста тук, който да преброя тук: ")
+str1 = input("Сложи текста, който да преброя тук: ")
 str2 = str1.lower()
 total_count = 0
 
