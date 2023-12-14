@@ -2,7 +2,7 @@
 import collections
 
 # Define a string 'str1' with a sentence.
-str1 = input("Enter your text here: ")
+str1 = input("Сложи текста тук, който да преброя тук: ")
 str2 = str1.lower()
 total_count = 0
 
@@ -23,4 +23,4 @@ for c in sorted(d, key=d.get, reverse=True):
         # Print the character and its count.
         print('%s %d' % (c, d[c]))
 
-print(f"Total characters: {total_count}")
+print(f"Общ брой букви: {total_count}")
